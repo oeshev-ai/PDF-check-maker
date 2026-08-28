@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Чек {{ order_id }}</title>
+</head>
+<body>
+    <h1>Кассовый чек</h1>
+
+    <div class="receipt-meta">
+        <p><strong>Номер заказа:</strong> {{ order_id }}</p>
+        <p><strong>Дата:</strong> {{ date }}</p>
+    </div>
+
+    <h2>Товары</h2>
+    {{ items }}
+
+    <p class="total">Итого: {{ total }} ₽</p>
+</body>
+</html>
